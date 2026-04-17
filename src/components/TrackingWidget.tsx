@@ -68,7 +68,7 @@ export default function TrackingWidget() {
           </h3>
           <div style={{ display: 'flex', gap: '15px', alignItems: 'center', marginBottom: '15px' }}>
             <div style={{ width: '60px', height: '60px', borderRadius: '50%', overflow: 'hidden', background: '#ccc' }}>
-              <img src="/api/image?path=/Users/nutnaree/.gemini/antigravity/brain/90045654-709d-4ab6-b489-0ce6c60bc3fb/thai_lay_master_1776363466647.png" alt="Coordinator" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/assets/thai_lay_master_1776363466647.png" alt="Coordinator" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <div>
               <p style={{ fontWeight: 'bold', margin: '0 0 4px 0', fontSize: '1rem' }}>อ. ธรรมราช คงมั่น</p>
