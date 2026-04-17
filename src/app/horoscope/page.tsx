@@ -98,7 +98,7 @@ export default function HoroscopePage() {
             <div className={`tarot-card ${isFlipped ? 'flipped' : ''}`}>
               {/* Back of Card */}
               <div className="tarot-face tarot-back">
-                <Image src="/images/tarot_back.png" alt="Tarot Card Back" fill style={{ objectFit: 'cover' }} />
+                <Image src="/jadhai/images/tarot_back.png" alt="Tarot Card Back" fill style={{ objectFit: 'cover' }} />
               </div>
               
               {/* Front of Card */}

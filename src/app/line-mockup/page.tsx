@@ -161,25 +161,25 @@ export default function LineMockupPage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '120px 120px', gap: '2px', backgroundColor: '#EAE5D9' }}>
             <Link href="/booking" style={{ backgroundColor: '#1A1816', color: '#D4AF37', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '10px' }}>
               <div style={{ width: '50px', height: '50px', position: 'relative', marginBottom: '8px' }}>
-                <Image src="/images/icon_booking_premium_1773555283436.png" alt="จองศาสนพิธีกร" fill style={{ objectFit: 'contain' }} />
+                <Image src="/jadhai/images/icon_booking_premium_1773555283436.png" alt="จองศาสนพิธีกร" fill style={{ objectFit: 'contain' }} />
               </div>
               <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>จองศาสนพิธีกร</span>
             </Link>
             <Link href="/shop" style={{ backgroundColor: '#C8102E', color: '#FFF', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '10px' }}>
               <div style={{ width: '50px', height: '50px', position: 'relative', marginBottom: '8px' }}>
-                <Image src="/images/icon_shop_premium_1773555300882.png" alt="สั่งของไหว้มงคล" fill style={{ objectFit: 'contain' }} />
+                <Image src="/jadhai/images/icon_shop_premium_1773555300882.png" alt="สั่งของไหว้มงคล" fill style={{ objectFit: 'contain' }} />
               </div>
               <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>สั่งซื้อเครื่องบูชา</span>
             </Link>
             <Link href="/calendar" style={{ backgroundColor: '#FDFBF7', color: '#2C2A26', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '10px' }}>
               <div style={{ width: '50px', height: '50px', position: 'relative', marginBottom: '8px' }}>
-                <Image src="/images/icon_calendar_premium_1773555318690.png" alt="ปฏิทินฤกษ์มงคล" fill style={{ objectFit: 'contain' }} />
+                <Image src="/jadhai/images/icon_calendar_premium_1773555318690.png" alt="ปฏิทินฤกษ์มงคล" fill style={{ objectFit: 'contain' }} />
               </div>
               <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>ฤกษ์มงคล</span>
             </Link>
             <Link href="/profile" style={{ backgroundColor: '#D4AF37', color: '#1A1816', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '10px' }}>
               <div style={{ width: '50px', height: '50px', position: 'relative', marginBottom: '8px' }}>
-                <Image src="/images/icon_profile_premium_1773555334809.png" alt="ข้อมูลส่วนตัว" fill style={{ objectFit: 'contain' }} />
+                <Image src="/jadhai/images/icon_profile_premium_1773555334809.png" alt="ข้อมูลส่วนตัว" fill style={{ objectFit: 'contain' }} />
               </div>
               <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>ข้อูลส่วนตัว/ดวงชะตา</span>
             </Link>

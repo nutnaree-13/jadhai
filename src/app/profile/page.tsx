@@ -156,7 +156,7 @@ export default function ProfileDashboard() {
             {/* ----- Shopping Integration ----- */}
             <div className="glass-panel" style={{ padding: '0', borderRadius: 'var(--radius-lg)', overflow: 'hidden', display: 'flex', border: '1px solid #EAE5D9' }}>
                <div style={{ flex: '1 1 200px', backgroundColor: '#F0EFEB', position: 'relative', minHeight: '250px' }}>
-                  <Image src="/images/ganesha_set.png" alt="ชุดไหว้พระพิฆเนศ" fill style={{ objectFit: 'cover' }} />
+                  <Image src="/jadhai/images/ganesha_set.png" alt="ชุดไหว้พระพิฆเนศ" fill style={{ objectFit: 'cover' }} />
                </div>
                <div style={{ flex: '2 1 400px', padding: 'var(--spacing-xl)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                  <div style={{ color: '#C8102E', fontWeight: 'bold', fontSize: '0.9rem', marginBottom: '10px' }}>จัดเตรียมให้พร้อม สำหรับวันมงคลของคุณ</div>

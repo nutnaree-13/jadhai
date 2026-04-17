@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function CeremonyOptions() {
   const ceremonies = [
-    { title: 'พิธีไทย', icon: '/images/icon_thai.png', desc: 'พิธีสงฆ์ งานแต่งงาน ทำบุญขึ้นบ้านใหม่' },
-    { title: 'พิธีจีน', icon: '/images/icon_chinese.png', desc: 'ยกน้ำชา ไหว้เจ้า ไหว้บรรพบุรุษ' },
-    { title: 'พิธีพราหมณ์', icon: '/images/icon_brahmin.png', desc: 'พิธีบวงสรวง ตั้งศาลพระภูมิ' },
-    { title: 'พิธีกรรมฮินดู', icon: '/images/icon_hindu.png', desc: 'พิธีบูชาเทพเจ้า งานนวราตรี' },
+    { title: 'พิธีไทย', icon: '/jadhai/images/icon_thai.png', desc: 'พิธีสงฆ์ งานแต่งงาน ทำบุญขึ้นบ้านใหม่' },
+    { title: 'พิธีจีน', icon: '/jadhai/images/icon_chinese.png', desc: 'ยกน้ำชา ไหว้เจ้า ไหว้บรรพบุรุษ' },
+    { title: 'พิธีพราหมณ์', icon: '/jadhai/images/icon_brahmin.png', desc: 'พิธีบวงสรวง ตั้งศาลพระภูมิ' },
+    { title: 'พิธีกรรมฮินดู', icon: '/jadhai/images/icon_hindu.png', desc: 'พิธีบูชาเทพเจ้า งานนวราตรี' },
   ];
 
   return (
@@ -70,7 +70,7 @@ export default function CeremonyOptions() {
         
         <div style={{ flex: '1 1 300px', position: 'relative', minHeight: '400px' }}>
           <Image 
-            src="/images/ceremony_collage.png" 
+            src="/jadhai/images/ceremony_collage.png" 
             alt="พิธีไทย จีน พราหมณ์ ฮินดู"
             fill
             style={{ objectFit: 'cover' }}

@@ -45,7 +45,7 @@ export default function FeaturedProducts() {
         
         <div style={{ flex: '1 1 400px', position: 'relative', height: '450px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 30px -5px rgba(0,0,0,0.1), 0 0 0 1px rgba(212, 175, 55, 0.2)' }}>
           <Image 
-            src="/images/featured_premium.png" 
+            src="/jadhai/images/featured_premium.png" 
             alt="ชุดเครื่องบูชามหามงคล (แดง ทอง ครีม)"
             fill
             style={{ objectFit: 'cover' }}

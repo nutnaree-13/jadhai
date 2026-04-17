@@ -208,7 +208,7 @@ export default function DashboardPage() {
           
           <div style={{ flex: '1 1 300px', background: '#fff', padding: '15px', borderRadius: '12px', boxShadow: '0 4px 15px rgba(200, 16, 46, 0.1)', display: 'flex', gap: '15px', alignItems: 'center' }}>
             <div style={{ width: '100px', height: '100px', borderRadius: '8px', overflow: 'hidden', flexShrink: 0, border: '1px solid #eee' }}>
-              <img src="/assets/amulet_rosequartz_1776370259603.png" alt="Rose Quartz Bracelet" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/jadhai/assets/amulet_rosequartz_1776370259603.png" alt="Rose Quartz Bracelet" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <div style={{ flex: 1 }}>
               <h4 style={{ margin: '0 0 5px 0', fontSize: '0.9rem', color: '#333' }}>กำไลหินโรสควอตซ์ (หนุนดวงความรัก)</h4>

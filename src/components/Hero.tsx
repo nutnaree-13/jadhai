@@ -10,7 +10,7 @@ export default function Hero() {
         alignItems: 'center', 
         textAlign: 'center',
         padding: "var(--spacing-xxl) var(--spacing-lg) var(--spacing-lg)",
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url("/images/hero_bg.png")',
+        backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url("/jadhai/images/hero_bg.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         borderRadius: 'var(--radius-lg)',

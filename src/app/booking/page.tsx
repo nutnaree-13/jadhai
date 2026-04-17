@@ -11,7 +11,7 @@ const OFFICIANTS = [
     name: 'พราหมณ์กริช',
     title: 'พราหมณ์หลวง (ประสบการณ์ 20 ปี)',
     specialties: ['พิธีตั้งศาล', 'เทวาภิเษก', 'บวงสรวงเปิดกล้อง'],
-    imageUrl: '/assets/brahmin_priest_thailand_1776363433330.png',
+    imageUrl: '/jadhai/assets/brahmin_priest_thailand_1776363433330.png',
     rating: 4.9,
     reviewsCount: 124,
     reviews: [
@@ -26,7 +26,7 @@ const OFFICIANTS = [
     name: 'ซินแส หมิงเต้า',
     title: 'ซินแสฮวงจุ้ยและพิธีจีน',
     specialties: ['หาฤกษ์มงคล', 'พิธียกน้ำชา', 'ตั้งตี่จู้เอี๊ยะ'],
-    imageUrl: '/assets/feng_shui_master_1776363449351.png',
+    imageUrl: '/jadhai/assets/feng_shui_master_1776363449351.png',
     rating: 4.8,
     reviewsCount: 89,
     reviews: [
@@ -41,7 +41,7 @@ const OFFICIANTS = [
     name: 'อ. ธรรมราช',
     title: 'เจ้าพิธีไทย (นิมนต์พระ/พราหมณ์)',
     specialties: ['ทำบุญขึ้นบ้านใหม่', 'งานมงคลสมรส', 'ทำบุญบริษัท'],
-    imageUrl: '/assets/thai_lay_master_1776363466647.png',
+    imageUrl: '/jadhai/assets/thai_lay_master_1776363466647.png',
     rating: 4.9,
     reviewsCount: 201,
     reviews: [
@@ -56,7 +56,7 @@ const OFFICIANTS = [
     name: 'แม่หมอ สายชล',
     title: 'ผู้เชี่ยวชาญพิธีบวงสรวง',
     specialties: ['พิธีสักการะ', 'บวงสรวงใหญ่', 'แก้บน'],
-    imageUrl: '/assets/thai_spirit_medium_1776363480908.png',
+    imageUrl: '/jadhai/assets/thai_spirit_medium_1776363480908.png',
     rating: 4.7,
     reviewsCount: 65,
     reviews: [
