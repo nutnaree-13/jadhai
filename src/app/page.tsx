@@ -1,66 +1,46 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Hero from '@/components/Hero';
+import ServiceCard from '@/components/ServiceCard';
+import FeaturedProducts from '@/components/FeaturedProducts';
+import CeremonyOptions from '@/components/CeremonyOptions';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div style={{ paddingBottom: 'var(--spacing-xxl)' }}>
+      <Hero />
+      
+      <FeaturedProducts />
+
+      <section className="container" style={{ marginTop: 'var(--spacing-xl)' }}>
+        <h2 style={{ fontSize: '2.5rem', textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
+          บริการของ <span className="text-gradient">เรา</span>
+        </h2>
+        
+        <div style={{ display: 'flex', gap: 'var(--spacing-lg)', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <ServiceCard 
+            title="บริการจัดพิธีมงคล" 
+            description="รับจัดงานพิธีมงคลครบวงจร ทั้งประเพณีไทย จีน พราหมณ์ และฮินดู ถูกต้องตามฤกษ์ยามและตรงตามความต้องการของคุณ"
+            icon="✨"
+            href="/services"
+          />
+          <ServiceCard 
+            title="ชุดเครื่องบูชาพรีเมียม" 
+            description="ชุดเครื่องตั้งและเครื่องบูชาที่คัดสรรมาอย่างประณีต สำหรับพิธีกรรมต่างๆ เพื่อความเป็นสิริมงคลสูงสุด"
+            icon="🪔"
+            href="/shop"
+          />
+          <ServiceCard 
+            title="จองศาสนพิธีกร" 
+            description="บริการจัดหาและจองคิวพระสงฆ์ นิมนต์พระ หรือพราหมณ์ผู้เชี่ยวชาญสำหรับงานพิธีของคุณ"
+            icon="🙏"
+            href="/booking"
+          />
+
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
+
+      <div id="ceremony-options">
+        <CeremonyOptions />
+      </div>
     </div>
   );
 }
