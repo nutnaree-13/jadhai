@@ -24,23 +24,12 @@ export default function CheckoutPage() {
       setIsProcessing(false);
       setIsSuccess(true);
       
-      // Trigger LINE Notification Background API
-      try {
-        await fetch('/api/line/push', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            userId: 'mock-user-id', 
-            messageType: 'payment',
-            payload: { amount }
-          })
-        });
-      } catch (err) {
-        console.error("Failed to push warning", err);
-      }
+      // Trigger LINE Notification Background (Mock)
+      console.log(`[MOCK] Sent LINE Push Notice to user for payment amount ฿${amount}`);
 
       // Simulate redirection to success logic or dashboard
       setTimeout(() => {
+
          router.push('/dashboard');
       }, 3000);
 

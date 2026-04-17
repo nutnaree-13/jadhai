@@ -1,9 +1,26 @@
 'use client';
 
-import { signIn } from 'next-auth/react';
 import React from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function SignInPage() {
+  const router = useRouter();
+
+  const handleMockLogin = () => {
+    // 1. Generate Mock Session in LocalStorage
+    localStorage.setItem('jadhai_mock_session', JSON.stringify({
+      user: {
+        name: 'คุณนัทนารี (Mock User)',
+        email: 'nutnaree@mock.test',
+        image: null
+      },
+      expires: '9999-12-31T23:59:59.999Z'
+    }));
+
+    // 2. Redirect to dashboard
+    router.push('/dashboard');
+  };
+
   return (
     <div style={{ minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 'var(--spacing-lg)' }}>
       <div className="glass-panel animate-fade-in" style={{ width: '100%', maxWidth: '400px', padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-lg)', textAlign: 'center' }}>
@@ -17,7 +34,7 @@ export default function SignInPage() {
         </p>
 
         <button 
-          onClick={() => signIn('line', { callbackUrl: '/dashboard' })}
+          onClick={handleMockLogin}
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -39,7 +56,7 @@ export default function SignInPage() {
           <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
             <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 3.55 8.895 8.272 9.582.324.068.761.21.874.522.1.282.065.719.031.986l-.137.828c-.042.247-.202.993.87.545 1.073-.448 5.792-3.411 7.91-5.836C22.618 14.654 24 12.607 24 10.304Zm-14.73 1.95H6.551c-.347 0-.628-.282-.628-.628V7.202c0-.347.281-.628.628-.628s.628.281.628.628v3.795h2.09c.347 0 .628.281.628.628s-.281.628-.628.628Z"/>
           </svg>
-          เข้าสู่ระบบด้วย LINE
+          เข้าสู่ระบบด้วย LINE (Mock)
         </button>
 
         <div style={{ marginTop: 'var(--spacing-lg)', display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>

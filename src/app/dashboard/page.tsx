@@ -1,21 +1,31 @@
-import { getServerSession } from "next-auth/next"
-import { authOptions } from "@/app/api/auth/[...nextauth]/route"
-import { redirect } from "next/navigation"
+'use client';
+
+import React, { useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
 import Link from "next/link"
 import HoroscopeCard from "../../components/HoroscopeCard"
 import LineTestButton from "@/components/LineTestButton"
 import TrackingWidget from "@/components/TrackingWidget"
 
-export default async function DashboardPage() {
-  let session = await getServerSession(authOptions)
-  
-  if (!session) {
-    // Mock Session for testing without LINE Provider keys
-    session = {
-      user: { name: 'คุณนัทนารี (Mock User)', email: 'nutnaree@mock.test' },
-      expires: '9999-12-31T23:59:59.999Z'
-    };
-  }
+export default function DashboardPage() {
+  const router = useRouter();
+  const [session, setSession] = useState<any>(null);
+
+  useEffect(() => {
+    const mockSession = localStorage.getItem('jadhai_mock_session');
+    if (mockSession) {
+      setSession(JSON.parse(mockSession));
+    } else {
+      // Default Mock Session if bypass login
+      setSession({
+        user: { name: 'คุณนัทนารี (Mock User)', email: 'nutnaree@mock.test' },
+        expires: '9999-12-31T23:59:59.999Z'
+      });
+    }
+  }, []);
+
+  if (!session) return null;
+
 
   return (
     <div className="container animate-fade-in" style={{ padding: 'var(--spacing-lg) 0', minHeight: '80vh' }}>
